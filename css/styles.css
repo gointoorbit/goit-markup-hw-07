@@ -26,9 +26,7 @@ body {
 
 .beginning {
   width: 1600px;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .header {

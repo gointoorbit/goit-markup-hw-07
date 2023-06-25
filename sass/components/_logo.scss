@@ -1,0 +1,30 @@
+@import "./../utils/vars";
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--logo-color-second);
+  margin-right: 93px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__text {
+    color: var(--logo-color-first);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--logo-color-first);
+  }
+
+  &.logo--footer {
+    color: var(--dark-background-text-color);
+
+    &:hover,
+    &:focus {
+      color: var(--logo-color-first);
+    }
+  }
+}

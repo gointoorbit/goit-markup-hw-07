@@ -1,0 +1,56 @@
+@import "./../utils/vars";
+
+.main-footer {
+  background-color: var(--dark-background);
+
+  &__container {
+    display: flex;
+  }
+
+  &__contact-data {
+    padding-block: 60px;
+    padding-left: 15px;
+  }
+
+  &__link {
+    @extend %link;
+
+    &--contact-details {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--contact-details);
+      display: block;
+      margin-top: 9px;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &--contact-details:hover,
+    &--contact-details:focus {
+      color: var(--logo-color-first);
+    }
+  }
+
+  &__contact-details {
+    font-style: normal;
+  }
+
+  &__address {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--dark-background-text-color);
+  }
+
+  &__social-media {
+    padding-left: 70px;
+    padding-right: 78px;
+  }
+
+  &__social-media-headline {
+    font-size: 14px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: var(--dark-background-text-color);
+    padding-top: 72px;
+    margin-block: 0 20px;
+  }
+}

@@ -1,0 +1,24 @@
+@import "./../utils/vars";
+
+.main-headline {
+  background-image: url(../images/background-image.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(47, 48, 58, 0.4);
+
+  &__container {
+    max-width: 1600px;
+    padding: 200px 252px;
+    background: transparent;
+  }
+
+  &__text {
+    @extend %text;
+    font-size: 44px;
+    line-height: 1.4;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    color: var(--dark-background-text-color);
+    text-align: center;
+  }
+}
